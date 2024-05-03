@@ -8,6 +8,7 @@ const createQR = () => {
   if(qrText.value.length > 0 ){
     qrBox.classList.add('show-img');
     qrImg.src = `${QR} + ${qrText.value}`;
+    document.querySelector('.customer').style.opacity = '0'
   } else {
     qrText.classList.add('error')
     setTimeout(() => {
